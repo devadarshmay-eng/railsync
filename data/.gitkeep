@@ -1,0 +1,2 @@
+# Directory placeholder for local SQLite databases.
+# Real database files (*.db, *.db-wal, *.db-shm) are ignored by git.

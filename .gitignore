@@ -1,0 +1,121 @@
+# ==============================================================================
+# RailSync AI - Production .gitignore
+# ==============================================================================
+
+# --- Python Bytecode & Compilation Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual Environments & Dependencies ---
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+.conda/
+
+# --- Environment Variables & Local Secrets ---
+.env
+.env.local
+.env.*.local
+*.secrets
+secrets.json
+
+# --- SQLite Databases & Runtime Storage ---
+# Preserves data/ directory via .gitkeep, ignores runtime database files
+data/*.db
+data/*.db-wal
+data/*.db-shm
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+!data/.gitkeep
+
+# --- Unit Tests, Pytest & Coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+htmlcov/
+.tox/
+.nox/
+
+# --- Heavy Media & Demonstration Video Recordings ---
+# Preserves recordings/ directory via .gitkeep, ignores large video files (>10MB)
+recordings/*.mp4
+recordings/*.webm
+recordings/*.mkv
+recordings/*.avi
+recordings/*.mov
+!recordings/.gitkeep
+
+# --- Machine Learning Model Weights & Local Hugging Face Cache ---
+models/*
+!models/.gitkeep
+hf_cache/
+*.pt
+*.bin
+*.safetensors
+*.onnx
+
+# --- Logs & Runtime Output ---
+*.log
+logs/
+log/
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# --- Browser Automation & Playwright Artifacts ---
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# --- IDEs, Editors & Workspaces ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+
+# --- Operating System Noise ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
